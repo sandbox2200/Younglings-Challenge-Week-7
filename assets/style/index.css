@@ -1,0 +1,135 @@
+       /* element that contains the map. */
+#map {
+  height: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-map-control-button {
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 0 0.5em;
+  font: 400 18px Roboto, Arial, sans-serif;
+  overflow: hidden;
+  height: 40px;
+  cursor: pointer;
+}
+.custom-map-control-button:hover {
+  background: #ebebeb;
+}
+
+.m
+{
+  height: 450px;
+  width: 500px;
+  background: rgb(27, 27, 27);
+  border-right: 2px solid rgb(15, 15, 15);
+}
+
+.bg 
+{
+  position: relative;
+  background: url("../images/bg.jpg") no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: 100%;
+}
+
+
+.form-container {
+    position: absolute;
+    top: 21vh;
+    background: rgba(0, 0, 0, 0.8);
+    width: 500px;
+    height: auto;
+    transform: translateX(140%);
+    padding: 30px;
+    border: 5px solid rgb(0,0,0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #000;
+    color: white;
+}
+
+#company-name {
+    text-align: center;
+}
+
+.form-group {
+    margin-top: 10%;
+}
+
+#passContainer {
+  display: block;
+  transition: 0.5s ease-in;
+}
+
+#passwordTitle {
+    transition: 0.5s ease-in;
+}
+
+#emailInput, #userPassword  {
+    font-size: 16px;
+    color: rgb(253, 253, 253);
+    letter-spacing: 1px;
+    border: none;
+    box-shadow: transparent;
+    border-bottom: 1px solid rgb(253, 253, 253);
+    background: transparent;
+}
+
+@media only screen and (max-width: 1024px) {
+    .bg {
+        background-size: 150%;
+    }
+    
+    .form-container {
+        width: 350px;
+    }
+
+    .m
+    {
+      height: 300px;
+      width: 450px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .bg {
+        background-size: 150%;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 750px)  {
+    .bg {
+        background-size: 200%;
+    }
+
+    .m
+    {
+      height: 250px;
+      width: 300px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .bg {
+        background-size: 250%;
+    }
+
+    .m
+    {
+      height: 250px;
+      width: 250px;
+    }
+}

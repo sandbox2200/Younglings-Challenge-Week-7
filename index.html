@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="assets/style/index.css" rel="stylesheet">
+    <title>Geo-login</title>
+</head>
+<body>
+    <div class="bg container-fluid">
+        <div id="map" class="m"></div>
+        <div class="form-container">
+            <h2 id="company-name">Geo-Login</h2>
+
+            <!-- The email option is disable onload. -->
+            <div class="form-group">
+                <label id="emailTitle">Email address</label>
+                <input type="email" class="form-control shadow-none" id="emailInput" name="email" aria-describedby="emailHelp"
+                    autocomplete="off" onchange="updateForm(name, value)">
+            </div>
+
+            <div class="form-group" id="passContainer">
+                <label id="passwordTitle">Password</label>
+                <input type="text" class="form-control shadow-none" id="userPassword" name="password" onchange="updateForm(name, value)">
+            </div>
+
+            <button type="button" class="btn btn-info btn-block" onclick="login()">Login</button>
+        </div>
+    </div>
+    <button onclick="login()">Try It</button>
+    <p id="demo"></p>
+    <div id="mapHolder">
+        
+    </div>
+
+    
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmRRUrqAMMa9tCc-AxYUQlbq2Tf-n06L8&callback=getLocation&libraries=&v=weekly" async defer></script>
+    <script src="assets/scripts/index.js"></script>
+</body>
+</html>
